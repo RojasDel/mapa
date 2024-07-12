@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo de Pathfinding A*</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+        .controls {
+            margin: 10px 0;
+        }
+        button {
+            margin-right: 10px;
+        }
+        #message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button id="vivienda">Agregar Vivienda</button>
+        <button id="agua">Agregar Agua</button>
+        <button id="obstruccion">Agregar Obstrucción</button>
+        <button id="inicio">Inicio</button>
+    </div>
+
+    <div class="coordinates">
+        <label for="x-coord">Coordenada X:</label>
+        <input type="number" id="x-coord" min="0" max="9">
+        <label for="y-coord">Coordenada Y:</label>
+        <input type="number" id="y-coord" min="0" max="9">
+        <button id="agregar-obstaculo">Agregar Obstáculo</button>
+    </div>
+
+    <p id="instructions">Selecciona un tipo de obstáculo, ingresa las coordenadas y haz clic en "Agregar Obstáculo".</p>
+    <p id="message"></p>
+
+    <canvas id="canvas" width="500" height="500"></canvas>
+    
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
